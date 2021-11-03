@@ -1,0 +1,25 @@
+.AppGeneral {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  background-color: #fff;
+
+  /* margin-right: 200px; */
+}
+.AppHeader {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items:center
+
+}
+
+
+
+
+

@@ -1,0 +1,113 @@
+.contenedor-estadoventas{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+}
+
+.contenedor-head >*{
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: rgb(95, 154, 241);
+}
+.contenedor-head{
+    border: 2px solid #fff;
+    text-align: center;
+    display: grid;
+    position: relative;
+    align-items:center;
+    gap:20px;
+    grid-template-rows: 50px;
+    grid-auto-rows: 55px;
+    background-color:rgb(95, 154, 241);
+    grid-template-columns: repeat(auto-fill,minmax(100px,300px));
+}
+.contenedor-head h1{
+    grid-column: span 2;
+}
+.contenedor-formulario-estado{
+    margin: 15vh 0;
+    min-width: 70vw;
+}
+.formulario-estado{
+    margin-top: 20px ;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 70vh;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 400px));
+    grid-auto-rows: 300px;
+    gap: 25px;
+    min-height: 70vh;
+    color:#000;
+    padding: 0 10px;
+}
+.contenedor-estado-izquierda{
+    margin: 0px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedor-estado-izquierda > *{
+    margin: 8px 10px;
+}
+.contenedor-estado-izquierda input{
+    width: 80%;
+    padding:10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+   
+}
+.contenedor-estado-izquierda label{
+    padding: 3px 0;
+}
+.contenedor-consultar{
+    text-align: center;
+}
+.consultar{
+    background-color: aliceblue;
+    max-width: 30%;
+    padding: 13px 30px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    transition: color .7s, background-color .7s, transform .7s;
+    cursor: pointer;
+}
+.consultar:hover{
+    background-color: #ccc;
+    color:#000;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+.contenedor-estado-derecho{
+    
+  
+    height: 100%;
+    grid-column: span 2;
+}
+
+.tabla{
+   
+    text-align: center;
+}
+
+.tabla th, td{
+    width: 15%;
+    text-align: left;
+    vertical-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+
+ }
+@media screen and (max-width: 360px) {
+    .contenedor-estado-derecho{
+        grid-column: span 1;
+    }
+    .tabla {
+      /* display: inline-block; */
+      overflow-x: auto;
+    }
+} 
