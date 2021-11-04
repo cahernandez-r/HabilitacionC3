@@ -1,0 +1,9 @@
+{
+    "mongodb": {
+      "server": "cluster0.32r4r.mongodb.net",
+      "database": "tienda",
+      "user": "adminDB",
+      "password": "WpS9Jxz1oxwzOdpQ"
+      
+    }
+  }
